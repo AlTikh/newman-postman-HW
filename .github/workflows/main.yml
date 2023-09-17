@@ -10,7 +10,7 @@ on:
 
 jobs:
   newman_run:
-    runs-on: RunSashaRun
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
