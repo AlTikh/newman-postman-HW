@@ -27,7 +27,7 @@ jobs:
           npm install -g newman-reporter-htmlextra
       - name: Run Tests on Dev or Stage
         run: |
-          newman run src/newman-postman-collection.json -e src/newman-postman-environment.json -r cli,htmlextra,junit
+          newman run src/newman-postman-collection.json -r cli,htmlextra,junit --delay 200
 
 
       # - name: Archive results
