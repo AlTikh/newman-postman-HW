@@ -54,9 +54,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/users",
+									"raw": "http://qa-school-test-api.quantori.academy/api/v1/users",
+									"protocol": "http",
 									"host": [
-										"{{BASE_URL}}"
+										"qa-school-test-api",
+										"quantori",
+										"academy"
 									],
 									"path": [
 										"api",
@@ -9975,7 +9978,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomNoun}}@mymail.com\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
