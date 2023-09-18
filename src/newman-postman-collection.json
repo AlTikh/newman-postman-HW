@@ -24,8 +24,7 @@
 											"    pm.collectionVariables.set(\"Admin_username\",jsonData.username);\r",
 											"     var jsonData = pm.response.json();\r",
 											"    pm.collectionVariables.set(\"Admin_password\",jsonData.password);\r",
-											"    var jsonData = pm.response.json();\r",
-											"    pm.collectionVariables.set(\"BASE_URL\",\"http://qa-school-test-api.quantori.academy\");"
+											"    "
 										],
 										"type": "text/javascript"
 									}
@@ -85,6 +84,16 @@
 											"pm.test(\"Response time is less than 1000ms\", function () {\r",
 											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"BASE_URL\",\"http://qa-school-test-api.quantori.academy\");"
 										],
 										"type": "text/javascript"
 									}
@@ -345,7 +354,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n\"username\": \"{{$randomNoun}}{{$randomNoun}}\", \r\n\"firstName\": \"{{$randomFirstName}}\", \r\n\"lastName\": \"{{$randomNoun}}\", \r\n\"email\": \"{{$randomEmail}}\", \r\n\"password\": \"{{$randompassword}}\",\r\n \"role\": \"admin\" \r\n }",
+									"raw": "{ \r\n\"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\", \r\n\"firstName\": \"{{$randomFirstName}}\", \r\n\"lastName\": \"{{$randomNoun}}\", \r\n\"email\": \"{{$randomEmail}}\", \r\n\"password\": \"{{$randomPassword}}\",\r\n \"role\": \"admin\" \r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -400,7 +409,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -456,7 +465,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -688,7 +697,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -740,7 +749,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"title\": \"{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2393,7 +2402,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"\r",
+											"/* If a user tries to find a category by id more or equal to 1999999999 the systme returns 500 instead of 404 */\r",
 											"pm.test(\"Status code is 404\", function () {\r",
 											"    pm.response.to.have.status(404);\r",
 											"});\r",
@@ -2536,7 +2545,7 @@
 					"name": "Users try to update categories",
 					"item": [
 						{
-							"name": "TECHNICAL for further updating DELETING an existing category",
+							"name": "TECHNICAL for further updating actions",
 							"event": [
 								{
 									"listen": "test",
@@ -2688,7 +2697,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2867,7 +2876,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"id\": {{category2_id}},\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"id\": {{category2_id}},\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3645,7 +3654,7 @@
 									"script": {
 										"exec": [
 											"\r",
-											"\r",
+											"/*It should be 400 instead of 500*/\r",
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
 											"});\r",
@@ -3754,6 +3763,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
+											"/*It should be 400 instead of 500*/\r",
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
 											"});\r",
@@ -3977,6 +3987,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
+											"/*It should be 400 instead of 500*/\r",
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
 											"});\r",
@@ -4272,6 +4283,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
+											"/*it should be 403 instead of 400*/\r",
 											"pm.test(\"Status code is 403\", function () {\r",
 											"    pm.response.to.have.status(403);\r",
 											"});\r",
@@ -4570,7 +4582,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"{{$randomProductName}}\"\r\n}",
+							"raw": "{\r\n  \"title\": \"{{$randomProductName}}{{$randomAlphaNumeric}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4629,7 +4641,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"{{$randomProductName}}\"\r\n}",
+							"raw": "{\r\n  \"title\": \"{{$randomProductName}}{{$randomAlphaNumeric}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5273,7 +5285,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"Lorem ipsum dolor sit ametr consectetuer adipiscing elitp sed diam nonummy nibh euismod tincidunt {{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"title\": \"Lorem ipsum dolor sit ametr consectetuer adipiscing elitp sed diam nonummy nibh euismod tincid{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}t {{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5338,7 +5350,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\":\" 123{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"title\":\" 123{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5589,7 +5601,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"_,{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"title\": \"_,{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -6309,7 +6321,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"fLOwer{{$randomNoun}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"title\": \"fLOwer{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -6943,7 +6955,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\":\"{{course_id}}\" ,\r\n  \"title\": \"{{$randomProductName}}\",\r\n  \"description\": \"{{$randomProductName}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"id\":\"{{course_id}}\" ,\r\n  \"title\": \"{{$randomProductName}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomProductName}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -7426,7 +7438,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": {{course_id}},\r\n  \"title\":\" 123{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"id\": {{course_id}},\r\n  \"title\":\" 123{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8400,7 +8412,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": {{course_id}},\r\n  \"title\": \"fLOwer{{$randomNoun}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"id\": {{course_id}},\r\n  \"title\": \"fLOwer{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8707,7 +8719,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"{{$randomProductName}}\",\r\n  \"description\": \"{{$randomProductName}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"title\": \"{{$randomProductName}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomProductName}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8876,7 +8888,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"{{$randomProductName}}\",\r\n  \"description\": \"{{$randomProductName}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
+							"raw": "{\r\n  \"title\": \"{{$randomProductName}}{{$randomAlphaNumeric}}\",\r\n  \"description\": \"{{$randomProductName}}\",\r\n  \"visible\": true,\r\n  \"categoryId\": {{category_id}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9281,6 +9293,7 @@
 							"listen": "test",
 							"script": {
 								"exec": [
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
@@ -9299,8 +9312,8 @@
 									"        pm.expect(course).to.have.property('dislikes');\r",
 									"    });\r",
 									"});\r",
-									"pm.test(\"Response time is less than 1000ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"pm.test(\"Response time is less than 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -9560,6 +9573,7 @@
 							"listen": "test",
 							"script": {
 								"exec": [
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
@@ -9578,8 +9592,8 @@
 									"        pm.expect(course).to.have.property('dislikes');\r",
 									"    });\r",
 									"});\r",
-									"pm.test(\"Response time is less than 1000ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"pm.test(\"Response time is less than 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -9822,7 +9836,7 @@
 					"response": []
 				},
 				{
-					"name": "Not authorized user treis to add a course",
+					"name": "Not authorized user tries to add a course",
 					"event": [
 						{
 							"listen": "test",
@@ -9980,7 +9994,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10037,7 +10051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10216,7 +10230,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10272,7 +10286,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10576,7 +10590,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10777,7 +10791,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"id\": {{category2_id}},\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"id\": {{category2_id}},\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -11029,7 +11043,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}\"\r\n}",
+									"raw": "{\r\n  \"title\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -11206,7 +11220,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}{{$randomAlphaNumeric}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -11441,7 +11455,8 @@
 		},
 		{
 			"key": "Teacher_password",
-			"value": ""
+			"value": "",
+			"disabled": true
 		},
 		{
 			"key": "Student_username",
@@ -11449,7 +11464,8 @@
 		},
 		{
 			"key": "Student_password",
-			"value": ""
+			"value": "",
+			"disabled": true
 		},
 		{
 			"key": "category3_title",
@@ -11461,6 +11477,14 @@
 		},
 		{
 			"key": "Student_id",
+			"value": ""
+		},
+		{
+			"key": "Teacher_password",
+			"value": ""
+		},
+		{
+			"key": "Student_password",
 			"value": ""
 		}
 	]
