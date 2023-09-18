@@ -2435,7 +2435,7 @@
 							"response": []
 						},
 						{
-							"name": "Student tries to find a category with very previous id-1 (finding boundaries)",
+							"name": "Student tries to find a category with previous id-1 (finding boundaries)",
 							"event": [
 								{
 									"listen": "test",
@@ -9957,7 +9957,9 @@
 											"    pm.collectionVariables.set(\"Student_password\",jsonData.password);\r",
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
-											"});"
+											"});\r",
+											" var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"Student_id\",jsonData.id); "
 										],
 										"type": "text/javascript"
 									}
@@ -10066,10 +10068,7 @@
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
 											"});\r",
-											" var jsonData = pm.response.json();\r",
-											"    pm.collectionVariables.set(\"Teacher_username\",jsonData.username);\r",
-											"     var jsonData = pm.response.json();\r",
-											"    pm.collectionVariables.set(\"Teacher_password\",jsonData.password);"
+											" "
 										],
 										"type": "text/javascript"
 									}
@@ -10090,7 +10089,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10115,7 +10114,7 @@
 					]
 				},
 				{
-					"name": "Scenario 2.",
+					"name": "Scenario 2. Teacher tries to manage courses in the created by Admin category",
 					"item": [
 						{
 							"name": "Receiving an access token for admin",
@@ -10239,6 +10238,62 @@
 							"response": []
 						},
 						{
+							"name": "Admin tries to add a teacher",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											" var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"Teacher_username\",jsonData.username);\r",
+											"\r",
+											"   var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"Teacher_id\",jsonData.id); "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AdminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"teacher\",\r\n  \"firstName\": \"{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/users",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Receiving an access token for teacher",
 							"event": [
 								{
@@ -10264,7 +10319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"Anton teacher\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{Teacher_username}}\",\r\n  \"password\": \"mypassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10419,7 +10474,7 @@
 					]
 				},
 				{
-					"name": "Scenario 3",
+					"name": "Scenario 3. Admin tries to manage categories and courses",
 					"item": [
 						{
 							"name": "Receiving an access token for admin",
@@ -10872,7 +10927,7 @@
 					]
 				},
 				{
-					"name": "Scenario 4",
+					"name": "Scenario 4. Student can get a course created by teacher in a category made by admin",
 					"item": [
 						{
 							"name": "Receiving an access token for admin",
@@ -11021,7 +11076,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"Anton teacher\",\r\n  \"password\": \"mypassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{Teacher_username}}\",\r\n  \"password\": \"mypassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -11114,6 +11169,65 @@
 							"response": []
 						},
 						{
+							"name": "Admin adds Student",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											" var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"Student_username\",jsonData.username);\r",
+											"\r",
+											" var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"Student_password\",jsonData.password);\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"   var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"Student_id\",jsonData.id); "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AdminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"role\": \"student\",\r\n  \"firstName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"lastName\": \"{{$randomNoun}}{{$randomNoun}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/users",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Receiving an access token for student",
 							"event": [
 								{
@@ -11140,7 +11254,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"username\": \"Sasha student\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
+									"raw": "{\r\n  \"username\": \"{{Student_username}}\",\r\n  \"password\": \"mysuperpassword\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -11343,6 +11457,10 @@
 		},
 		{
 			"key": "Teacher_id",
+			"value": ""
+		},
+		{
+			"key": "Student_id",
 			"value": ""
 		}
 	]
