@@ -24,6 +24,8 @@
 											"    pm.collectionVariables.set(\"Admin_username\",jsonData.username);\r",
 											"     var jsonData = pm.response.json();\r",
 											"    pm.collectionVariables.set(\"Admin_password\",jsonData.password);\r",
+											"var jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"BASE_URL\",\"http://qa-school-test-api.quantori.academy\")\r",
 											"    "
 										],
 										"type": "text/javascript"
@@ -92,8 +94,7 @@
 									"listen": "prerequest",
 									"script": {
 										"exec": [
-											"var jsonData = pm.response.json();\r",
-											"    pm.collectionVariables.set(\"BASE_URL\",\"http://qa-school-test-api.quantori.academy\");"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -311,6 +312,26 @@
 								}
 							},
 							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
 						}
 					]
 				},
