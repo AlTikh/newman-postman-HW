@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Aleksandra_Tikhonova" tests="195" time="16.888">
+  <testsuite name="Lecture-1 / Receiving tokens / Add Admin (technical, for single use only)" id="b9c2baec-d0fd-4f3f-b23c-e4e07b3923a1" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.399"/>
+  <testsuite name="Lecture-1 / Receiving tokens / Receiving an access token for admin" id="46c4b11c-f06a-43b7-9d01-5ec56df5e6cb" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.738">
+    <testcase name="Status code is 200" time="0.738" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.738" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Receiving tokens / Receiving an access token for student" id="2040475f-eda3-45b0-8176-9ca255412b67" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.380">
+    <testcase name="Status code is 200" time="0.380" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.380" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Receiving tokens / Receiving an access token for teacher" id="f2c67ef6-9f95-4db0-a64d-a58baaa515be" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.543">
+    <testcase name="Status code is 200" time="0.543" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.543" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Receiving tokens / Check that password field influences on validation" id="0b6ddb56-dac0-41bd-a01c-1eaea0d3d30e" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.329">
+    <testcase name="Status code is 400" time="0.329" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Receiving tokens / Check that login field influences on validation" id="778246c3-807e-4243-aaeb-4fb18a7e27a4" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 404" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Add different types of users / Add Admin" id="df7dfdd1-39b6-40ef-bf67-8b9cfe64f949" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.310">
+    <testcase name="Response time is less than 1000ms" time="0.310" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.310" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Add different types of users / Add Teacher" id="2fb8175b-ea5c-469d-a103-590893fb9a41" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.358">
+    <testcase name="Status code is 200" time="0.358" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Add different types of users / Add Student" id="8d43f84f-7282-4528-9c8a-82f95869cc15" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.287">
+    <testcase name="Status code is 200" time="0.287" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Add different types of users / Teacher tries to create admin user" id="f842f4b9-fc4a-4989-968d-19e17e57f51d" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.029">
+    <testcase name="Status code is 403" time="0.029" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.029" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Add different types of users / Student tries to create admin user" id="56caf8b1-9828-4a00-863a-1ffb3521bfda" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.029">
+    <testcase name="Status code is 403" time="0.029" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.029" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Add different types of users / Admin tries to create another type of user with the same credentials" id="14703ebb-81a2-4c56-82c2-eafc77ec3328" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 400" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / New category_Admin" id="e352755a-039b-401d-9c75-a4d3eacc2fc9" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.058">
+    <testcase name="Status code is 200" time="0.058" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.058" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.058" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8653,&quot;title&quot;:&quot;alarmfeed0&quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / New category_Admin.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8653,"title":"alarmfeed0"}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8653,"title":"alarmfeed0"}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:13).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / New category 2 Technical_Admin" id="8c38e3ba-18eb-47ae-bf9f-ad135f55a521" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.043"/>
+  <testsuite name="Lecture-1 / Users try to add a new category / New category 3 Technical_Admin" id="053c5727-4f44-4a02-9529-50f02c6851da" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.044"/>
+  <testsuite name="Lecture-1 / Users try to add a new category / Admin tries to create a new category with already existing name" id="644851fd-9dfd-4e70-9b38-3f03df34d5c8" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.033">
+    <testcase name="Status code is 400" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.033" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Admin tries to create a category with ID" id="eff98629-be63-4daa-a7b9-9dee6075eb35" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Student tries to add a new category" id="fe5110e6-9ddd-4434-8e4b-667efb9ce808" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.031">
+    <testcase name="Status code is 403" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.031" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Teacher tries to add a new category" id="b637d2d3-f57e-4356-868c-5acb9305e6bb" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.033">
+    <testcase name="Status code is 403" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.033" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / PUT instead of POST to add a new category" id="b3bf6658-5b5b-44e4-ae26-324ed9f76886" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with 100 characters in the title" id="677fc7c2-cbd9-4692-9ded-5596bcfa9a99" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.043">
+    <testcase name="Status code is 200" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.043" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8657,&quot;title&quot;:&quot;Lorem ipsum doloе…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category with 100 characters in the title.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8657,"title":"Lorem ipsum doloе…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8657,"title":"Lorem ipsum doloе…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:21).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with 3 characters in the name" id="65c11ae5-96ad-44bc-b813-cc95fa70a964" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.043">
+    <testcase name="Status code is 200" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.043" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8658,&quot;title&quot;:&quot;Lkz&quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category with 3 characters in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8658,"title":"Lkz"}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8658,"title":"Lkz"}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:22).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with 2 characters in the name" id="7b66ac41-a865-497f-925a-7f964c5c5341" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with 101 characters in the name" id="39185584-5214-4449-a298-80336eb4c716" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with numbers and space in the name" id="4fd50691-36ae-4519-9e95-29c16fbf3ff3" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.045" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8659,&quot;title&quot;:&quot;1235z345 &quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category with numbers and space in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8659,"title":"1235z345 "}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8659,"title":"1235z345 "}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:25).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with only spaces in the name" id="11487d62-e611-4f70-9c41-405304c2415b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with special symbols in the name" id="143d67ee-b323-4aeb-a829-0251925aa24e" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 400" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with a leading space in the name" id="079537bc-d1d2-4387-9aeb-ec6ac8866a0c" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.043">
+    <testcase name="Status code is 200" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.043" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8660,&quot;title&quot;:&quot; ej&quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category with a leading space in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8660,"title":" ej"}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8660,"title":" ej"}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:28).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with leading zero in the name" id="f38f074f-cbe5-4234-90eb-1ee0a2f199ec" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.043">
+    <testcase name="Status code is 200" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.043" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8661,&quot;title&quot;:&quot;031655&quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category with leading zero in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8661,"title":"031655"}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8661,"title":"031655"}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:29).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with null instead  of name" id="7d4caa19-ed89-4fe7-996e-4815b9282ada" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with false instead  of name" id="b05e44da-8828-4219-ad99-f9660b4a9dda" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with empty string instead of name" id="930425b5-0590-457e-805a-961387c9e925" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category upper-case character in the name" id="76edc866-53e5-4bb2-95fb-e53fa16fe812" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.043">
+    <testcase name="Status code is 200" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.043" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8662,&quot;title&quot;:&quot;capacitorLovprogr…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category upper-case character in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8662,"title":"capacitorLovprogr…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8662,"title":"capacitorLovprogr…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:33).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to add a new category / Add a category with a name that is the same as a part of the name of an already existing category" id="a56ac1df-7945-47df-a561-62982be62f66" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.048">
+    <testcase name="Status code is 200" time="0.048" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.048" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.048" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8663,&quot;title&quot;:&quot;Lovprogram8&quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to add a new category / Add a category with a name that is the same as a part of the name of an already existing category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8663,"title":"Lovprogram8"}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8663,"title":"Lovprogram8"}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:34).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users see the whole list of categories / Teacher tries to see the list of categories" id="6864469c-7107-40e0-9df4-0ddf82e17fb5" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="1" errors="0" time="0.094">
+    <testcase name="Status code is 200" time="0.094" classname="AleksandraTikhonova"/>
+    <testcase name="Response is an array" time="0.094" classname="AleksandraTikhonova"/>
+    <testcase name="Each element in the array has the required properties" time="0.094" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users see the whole list of categories / Teacher tries to see the list of categories.]]>
+        <![CDATA[Test description: Each element in the array has the required properties.]]>
+        <![CDATA[Error message: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'
+   at Object.eval sandbox-script.js:3:35).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.094" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users see the whole list of categories / Student tries to see the list of categories" id="a71974a0-e662-4b44-9d82-3a02997dcf0a" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="1" errors="0" time="0.054">
+    <testcase name="Status code is 200" time="0.054" classname="AleksandraTikhonova"/>
+    <testcase name="Response is an array" time="0.054" classname="AleksandraTikhonova"/>
+    <testcase name="Each element in the array has the required properties" time="0.054" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users see the whole list of categories / Student tries to see the list of categories.]]>
+        <![CDATA[Test description: Each element in the array has the required properties.]]>
+        <![CDATA[Error message: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'
+   at Object.eval sandbox-script.js:3:36).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.054" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users see the whole list of categories / Admin tries to see the list of categories" id="c19766a9-733b-4973-a0a4-57da1e442730" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="1" errors="0" time="0.057">
+    <testcase name="Status code is 200" time="0.057" classname="AleksandraTikhonova"/>
+    <testcase name="Response is an array" time="0.057" classname="AleksandraTikhonova"/>
+    <testcase name="Each element in the array has the required properties" time="0.057" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users see the whole list of categories / Admin tries to see the list of categories.]]>
+        <![CDATA[Test description: Each element in the array has the required properties.]]>
+        <![CDATA[Error message: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'
+   at Object.eval sandbox-script.js:3:37).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.057" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Admin tries to find a category by its id" id="958e12e9-f821-4a6e-a2ea-3a56ed16a4d7" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.033">
+    <testcase name="Status code is 200" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.033" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Teacher tries to find a category by its id" id="b6bc8a87-61ba-4770-b413-84217be589d2" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.030">
+    <testcase name="Status code is 200" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.030" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Student tries to find a category by its id" id="a4973f94-5234-41b0-9754-57d32fdc7b59" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.035">
+    <testcase name="Status code is 200" time="0.035" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.035" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.035" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Student tries to find a category by non-existing id" id="1745e395-e110-490f-9ee3-18e3563e62f9" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.030">
+    <testcase name="Status code is 404" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Student tries to find a category with very big id" id="ce44f02b-14f0-487a-b6a9-dd3823a147b7" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.034">
+    <testcase name="Status code is 404" time="0.034" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 404 but got 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to find a category by its ID / Student tries to find a category with very big id.]]>
+        <![CDATA[Test description: Status code is 404.]]>
+        <![CDATA[Error message: expected response to have status code 404 but got 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 404 but got 500
+   at Object.eval sandbox-script.js:1:42).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.034" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Student tries to find a category with previous id-1 (finding boundaries)" id="10c18be6-1bfa-4e13-9a74-80de90eb5b3d" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.031">
+    <testcase name="Status code is 404" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.031" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to find a category by its ID / Teacher tries to GET a category with id=0" id="57e6c009-d4e5-431a-9056-d2759c05fcf0" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.030">
+    <testcase name="Status code is 404" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / TECHNICAL for further updating actions" id="74ba3e79-0200-4621-baf4-c90fcff3ca0c" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.059">
+    <testcase name="Status code is 200" time="0.059" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.059" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.059" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Admin tries to update inexisting category" id="d027671b-8cda-485c-8ac1-f844c408d647" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.031">
+    <testcase name="Status code is 404" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.031" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / TECHNICAL Add a category for further updating" id="83ff0f34-1a70-45e6-863b-c43bc0523a20" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.044"/>
+  <testsuite name="Lecture-1 / Users try to update categories / Updating if there isn't name string in JSON" id="d8c692f7-ff9c-4189-816e-7459464d981b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.025" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="Unexpected token '&lt;' at 1:1&#xA;&lt;!DOCTYPE html>&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Updating if there isn't name string in JSON.]]>
+        <![CDATA[Test description: Response contains the error message.]]>
+        <![CDATA[Error message: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+   at Object.eval sandbox-script.js:3:48).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Admin tries to update a category with the same name as this category has" id="67c59584-9155-4416-b3bb-55daf70ebe82" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.044">
+    <testcase name="Response time is less than 1000ms" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.044" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Admin tries to update categories" id="5ccd9f81-92cb-48fd-9e58-3c91ee77e3b3" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="1" time="0.026">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Teacher tries to update a category" id="a3a7db3f-e8d0-41bf-b636-0a004168262f" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="1" time="0.026">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Student tries to update category" id="836cc2d9-b7d1-4980-9361-3d13fe463bdb" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="1" time="0.024">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with 100 characters in the name" id="c67e27cc-9174-4e2f-a307-cdd7ae48a9d8" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.043">
+    <testcase name="Status code is 200" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.043" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.043" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with 3 characters in the name" id="5776a92e-1737-4e54-b6e0-d58ff4ca6057" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.045" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with 2 characters in the name" id="debf2e05-2a9e-46da-9db1-24b695734391" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with 101 characters in the name" id="d298f696-886f-4cc8-b00a-c98e70efe947" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with numbers and space in the name" id="5829ebc6-0118-45cd-a3c2-13e3566e1e6b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.050">
+    <testcase name="Status code is 200" time="0.050" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.050" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.050" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with only spaces in the name" id="de75e199-249b-4c98-9041-df1a98120d5f" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with special symbols in the name" id="10478016-5acb-445e-8be6-1cd2bd979895" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 400" time="0.024" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.024" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.024" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with a leading space in the name" id="d3ed7cfd-654c-4f2b-8286-0a8e281d3f3d" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.044">
+    <testcase name="Status code is 200" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.044" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category with leading zero in the name" id="7d394f33-8646-45a9-ba4d-d1ab09c59be5" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="1" time="0.024">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with null instead  of name Copy" id="a344c28f-d8a9-4234-8f6d-2eb197ed0b3b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with  already existing alphabetic name" id="5b559594-54e2-438d-a271-3f1090d0202e" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="2" errors="0" time="0.034">
+    <testcase name="Status code is 400" time="0.034" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Update a category name with  already existing alphabetic name.]]>
+        <![CDATA[Test description: Status code is 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 500
+   at Object.eval sandbox-script.js:1:63).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.034" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.034" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected 'Unable to change category: SequelizeU…' to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Update a category name with  already existing alphabetic name.]]>
+        <![CDATA[Test description: Response should contain an error message.]]>
+        <![CDATA[Error message: expected 'Unable to change category: SequelizeU…' to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Unable to change category: SequelizeU…' to be an array
+   at Object.eval sandbox-script.js:3:63).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / TECHNICAL update a category with numeric name. FOR FURTHER TESTS" id="bb50e6e7-a611-426a-81fe-851d77a8921e" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="1" time="0.025">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with  already existing numeric name" id="5213e852-2efb-44da-97ac-674bda7fc9a6" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="2" errors="0" time="0.037">
+    <testcase name="Status code is 400" time="0.037" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Update a category name with  already existing numeric name.]]>
+        <![CDATA[Test description: Status code is 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 500
+   at Object.eval sandbox-script.js:1:65).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.037" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.037" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected 'Unable to change category: SequelizeU…' to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Update a category name with  already existing numeric name.]]>
+        <![CDATA[Test description: Response should contain an error message.]]>
+        <![CDATA[Error message: expected 'Unable to change category: SequelizeU…' to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Unable to change category: SequelizeU…' to be an array
+   at Object.eval sandbox-script.js:3:65).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with FALSE instead of valid values" id="5128a6f9-0387-491d-91ae-c1fa260d47f2" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with empty string instead of name" id="8482243a-9276-4458-84ff-d85b2939060b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / TECHNICAL update a category with name containing an upper-case symbol FOR FURTHER CHECKS" id="666c8948-053e-4cd7-9cb3-1de8a3dce30f" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="1" time="0.024">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with an already existing name containing upper-case character" id="dfe1dd08-a0b3-4ff9-89b4-079dc306afee" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="2" errors="0" time="0.038">
+    <testcase name="Status code is 400" time="0.038" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Update a category name with an already existing name containing upper-case character.]]>
+        <![CDATA[Test description: Status code is 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 500
+   at Object.eval sandbox-script.js:1:69).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.038" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.038" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;errors&quot;:&quot;Unable to change category:…' to include 'title should be unique'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to update categories / Update a category name with an already existing name containing upper-case character.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"errors":"Unable to change category:…' to include 'title should be unique'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"errors":"Unable to change category:…' to include 'title should be unique'
+   at Object.eval sandbox-script.js:3:69).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to update categories / TECHNICAL update a category. FOR FURTHER CHECKS" id="13b74973-e671-4b51-9b3e-2c78568b6cfe" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.025"/>
+  <testsuite name="Lecture-1 / Users try to update categories / Update a category name with a name that is the same as a part of the name of an already existing category Copy" id="5f857628-13ba-4b62-997d-efd3afa4d741" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.047">
+    <testcase name="Status code is 200" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to delete categories / Admin tries to Delete an existing category" id="cd79f685-d442-4c65-a68c-ec86d99bc05b" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.039">
+    <testcase name="Status code is 200" time="0.039" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.039" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.039" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to delete categories / Admin tries to delete inexisting category" id="19560f70-02b1-44a0-a671-ca4f1aab18d7" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="2" errors="0" time="0.032">
+    <testcase name="Status code is 404" time="0.032" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 404 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to delete categories / Admin tries to delete inexisting category.]]>
+        <![CDATA[Test description: Status code is 404.]]>
+        <![CDATA[Error message: expected response to have status code 404 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 404 but got 200
+   at Object.eval sandbox-script.js:1:73).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.032" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.032" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '0')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to delete categories / Admin tries to delete inexisting category.]]>
+        <![CDATA[Test description: Response contains the error message.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '0').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '0')
+   at Object.eval sandbox-script.js:3:73).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to delete categories / Teacher tries to delete a category" id="01d7a30c-bd98-418f-8175-affeb8a888bb" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.031">
+    <testcase name="Status code is 403" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.031" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to delete categories / Student tries to delete a category" id="b38849f2-c2ca-4cc7-9e92-0cd86fa24a9a" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.031">
+    <testcase name="Status code is 403" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.031" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.031" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to delete categories / Admin tries to delete category with id=0" id="907e880e-20fe-4b02-9981-e2fd4ccafac2" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="2" errors="0" time="0.030">
+    <testcase name="Status code is 404" time="0.030" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 404 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to delete categories / Admin tries to delete category with id=0.]]>
+        <![CDATA[Test description: Status code is 404.]]>
+        <![CDATA[Error message: expected response to have status code 404 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 404 but got 200
+   at Object.eval sandbox-script.js:1:76).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.030" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '0')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to delete categories / Admin tries to delete category with id=0.]]>
+        <![CDATA[Test description: Response contains the error message.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '0').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '0')
+   at Object.eval sandbox-script.js:3:76).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-1 / Users try to delete categories / Admin tries to delete a category with negative id" id="c25e2253-3a46-42d5-83be-0b1b8614de0c" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.024">
+    <testcase name="Status code is 400" time="0.024" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.024" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.024" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '0')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-1 / Users try to delete categories / Admin tries to delete a category with negative id.]]>
+        <![CDATA[Test description: Response contains the error message.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '0').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '0')
+   at Object.eval sandbox-script.js:3:77).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-2 / Receiving an access token for admin Technical" id="f1d93a69-2ff7-4967-adda-f29ffc2ccf96" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.344"/>
+  <testsuite name="Lecture-2 / Add the first category for lecture-2 Technical" id="d2aa19eb-6474-4471-8033-728f9d3a95d2" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.045"/>
+  <testsuite name="Lecture-2 / Add the second category for lecture-2 Technical" id="8e1602e0-fba8-4b50-8ca4-9ab332ab768d" timestamp="2023-09-23T09:57:35.062Z" tests="0" failures="0" errors="0" time="0.045"/>
+  <testsuite name="Lecture-2 / Receive Student token" id="454cafba-a439-4e7c-933e-bcfe9ec9a49d" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.332">
+    <testcase name="Response time is less than 1000ms" time="0.332" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Receive Teacher token" id="a556b110-8df6-4b0a-98a1-d4609a8aa326" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.282">
+    <testcase name="Status code is 200" time="0.282" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.282" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to add a course" id="9f572e8a-2ad1-4ee2-89f1-d2ab397d4420" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.070">
+    <testcase name="Status code is 200" time="0.070" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.070" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;gsrp&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Teacher tries to add a course.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"gsrp","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"gsrp","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:83).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.070" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to add a course to inexisting category" id="5db5b6c2-d390-4143-8846-0460431337e7" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 100 characters in the name" id="acb49ed3-addb-4eb0-8d3b-7d1c72d80491" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.068">
+    <testcase name="Status code is 200" time="0.068" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.068" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13970,&quot;title&quot;:&quot;Lorem ipsum dolo…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with 100 characters in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13970,"title":"Lorem ipsum dolo…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13970,"title":"Lorem ipsum dolo…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:85).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.068" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 100 characters in the description" id="158f92b6-a416-4be2-8327-4770a91d1fd7" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.061">
+    <testcase name="Status code is 200" time="0.061" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.061" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13971,&quot;title&quot;:&quot;ljt9&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with 100 characters in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13971,"title":"ljt9","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13971,"title":"ljt9","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:86).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.061" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 3 characters in the name" id="5604e601-c4f4-43ca-8d4d-ee430451a3af" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.067">
+    <testcase name="Body matches string" time="0.067" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13972,&quot;title&quot;:&quot;fgy&quot;,&quot;categoryId…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with 3 characters in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13972,"title":"fgy","categoryId…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13972,"title":"fgy","categoryId…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:87).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.067" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 3 characters in the description" id="bfc5b0d7-2357-4b8d-bbc8-f4d81d5d0f18" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.062">
+    <testcase name="Body matches string" time="0.062" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13973,&quot;title&quot;:&quot;zdr5&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with 3 characters in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13973,"title":"zdr5","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13973,"title":"zdr5","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:88).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.062" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 2 characters in the name" id="21ddc2ee-985a-46b1-b3d0-04867062d645" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 400" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 2 characters in the description" id="6574a80a-f604-4c30-8760-cba774a4130b" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with 101 characters in the name" id="7affed7c-64e8-4312-a9c6-0ee89a7b4d6e" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="2" errors="0" time="0.072">
+    <testcase name="Status code is 400" time="0.072" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with 101 characters in the name.]]>
+        <![CDATA[Test description: Status code is 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:91).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response should contain an error message" time="0.072" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected undefined to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with 101 characters in the name.]]>
+        <![CDATA[Test description: Response should contain an error message.]]>
+        <![CDATA[Error message: expected undefined to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be an array
+   at Object.eval sandbox-script.js:2:91).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with numbers and space in the name" id="4403f039-7ef2-4978-8ef8-6a4f9ed26161" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.059">
+    <testcase name="Body matches string" time="0.059" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13975,&quot;title&quot;:&quot; 1235vr&quot;,&quot;catego…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with numbers and space in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13975,"title":" 1235vr","catego…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13975,"title":" 1235vr","catego…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:92).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.059" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.059" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with numbers and space in the description" id="db6a7e40-4949-49b5-8091-f577393f9d31" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.066">
+    <testcase name="Body matches string" time="0.066" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13976,&quot;title&quot;:&quot;hf8t&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with numbers and space in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13976,"title":"hf8t","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13976,"title":"hf8t","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:93).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.066" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.066" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with only spaces in the name" id="5055c5c6-3e48-4182-865f-de462467a5bf" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.028">
+    <testcase name="Response time is less than 1000ms" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 400" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with only spaces in the description" id="7fa76677-7ac9-46d6-b0e4-70a550f70789" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.070">
+    <testcase name="Status code is 200" time="0.070" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.070" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13977,&quot;title&quot;:&quot;ztz9&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with only spaces in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13977,"title":"ztz9","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13977,"title":"ztz9","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:95).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.070" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with special symbols in the name" id="5af626e9-553d-4e12-936a-4e9ffacd2cec" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.059">
+    <testcase name="Body matches string" time="0.059" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13978,&quot;title&quot;:&quot;_,jav&quot;,&quot;category…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with special symbols in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13978,"title":"_,jav","category…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13978,"title":"_,jav","category…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:96).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.059" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with special symbols in the description" id="d6e7fc4b-d0ea-4383-a55c-5ef86d4f54d4" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.056">
+    <testcase name="Body matches string" time="0.056" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13979,&quot;title&quot;:&quot;ki39&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with special symbols in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13979,"title":"ki39","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13979,"title":"ki39","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:97).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.056" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with a leading space in the name" id="8efd8a8d-0568-447f-a0e0-dea367a2a3a5" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.058">
+    <testcase name="Body matches string" time="0.058" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13980,&quot;title&quot;:&quot; ngf&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with a leading space in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13980,"title":" ngf","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13980,"title":" ngf","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:98).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.058" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.058" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with a leading space in the description" id="f652d054-ef0d-49d7-99a8-568e3c7420f9" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.066">
+    <testcase name="Body matches string" time="0.066" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13981,&quot;title&quot;:&quot;fnx&quot;,&quot;categoryId…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with a leading space in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13981,"title":"fnx","categoryId…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13981,"title":"fnx","categoryId…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:99).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.066" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.066" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with leading zero in the name" id="5bb10f7a-17df-4820-b464-89d38f29b9ab" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.059">
+    <testcase name="Body matches string" time="0.059" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13982,&quot;title&quot;:&quot;0210.37.132.15&quot;,…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with leading zero in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13982,"title":"0210.37.132.15",…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13982,"title":"0210.37.132.15",…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:100).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.059" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.059" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with leading zero in the description" id="8893ce07-d295-43ca-bf7b-4afd049d67b9" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.056">
+    <testcase name="Body matches string" time="0.056" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13983,&quot;title&quot;:&quot;ilr2&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with leading zero in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13983,"title":"ilr2","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13983,"title":"ilr2","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:101).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.056" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.056" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with null instead  of name" id="19d8acc3-19cb-47a9-b64c-ce4f3ad6654b" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.029">
+    <testcase name="Status code is 400" time="0.029" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.029" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with null instead  of description" id="0c5ab66e-175d-42aa-9fb6-fbbcab06135c" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 400" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with false instead  of name" id="edfc8917-bbc4-4e1a-ad1d-719ea1706fb7" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 400" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with false instead  of description" id="bbb2c082-8aa0-440a-bc1f-425cce0858ec" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with empty string instead of name" id="77352582-a3c9-461f-ace0-5a8203f31849" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with empty string instead of description" id="bccec89d-ae14-4a5d-a99e-49b398ab8394" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Response time is less than 1000ms" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course upper-case character in the name" id="7b077b87-482d-497a-9108-b39ab785f59d" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.058">
+    <testcase name="Body matches string" time="0.058" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13984,&quot;title&quot;:&quot;fLOwercapacitorp…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course upper-case character in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13984,"title":"fLOwercapacitorp…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13984,"title":"fLOwercapacitorp…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:108).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.058" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.058" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course upper-case character in the description" id="ddc84b07-0692-4680-a6c0-8c394c2ad2f3" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.058">
+    <testcase name="Body matches string" time="0.058" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13985,&quot;title&quot;:&quot;xgzm&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course upper-case character in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13985,"title":"xgzm","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13985,"title":"xgzm","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:109).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.058" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.058" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with a name that is the same as a part of the name of an already existing category" id="3288d04b-40ee-44b5-b2b6-8791726b26d9" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.057">
+    <testcase name="Body matches string" time="0.057" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13986,&quot;title&quot;:&quot;0gzgsrp&quot;,&quot;catego…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Add a course with a name that is the same as a part of the name of an already existing category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13986,"title":"0gzgsrp","catego…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13986,"title":"0gzgsrp","catego…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:1:110).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.057" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course with invalid value in Visible field" id="8fbe0ce9-9cad-4496-a0d2-cf624107b48f" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 400" time="0.024" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.024" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to add a course" id="f5ba2575-1559-4977-9708-3e38ce156872" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.032">
+    <testcase name="Status code is 200" time="0.032" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.032" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.032" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to see the added course in the list of courses" id="beeea673-e50d-4017-a60e-ce28218548c9" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.794">
+    <testcase name="Status code is 200" time="0.794" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.794" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to get a course by id" id="e3051df7-a4f2-4c3c-9aee-b3d3b2754bf7" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.047">
+    <testcase name="Status code is 200" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / PUT instead of POST Teacher tries to add a course" id="e3b94c4c-acc2-4095-91e6-0f44e86d17f2" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 400" time="0.024" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Course updating by a teacher" id="e8efb781-4e1b-423e-a2d0-b504b87f19c9" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.053">
+    <testcase name="Status code is 200" time="0.053" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.053" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;Generic Cotton B…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Course updating by a teacher.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"Generic Cotton B…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"Generic Cotton B…' to include 'likes'
+   at Object.eval sandbox-script.js:2:116).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.053" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / PUT instead of PATCH Course updating by a teacher" id="197e7fac-8a26-49d9-a5db-fc94d9ce849f" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to update a course with the same name" id="4b780624-be02-48a3-af33-ffaece6d67d2" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.054">
+    <testcase name="Status code is 200" time="0.054" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.054" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;gsrp&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Teacher tries to update a course with the same name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"gsrp","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"gsrp","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:2:118).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.054" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Course updating by a student" id="af0d27ac-a410-4237-9861-478bf5c1f5a6" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.034">
+    <testcase name="Status code is 403" time="0.034" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.034" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.034" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 100 characters in the name" id="4de5ec98-b381-410e-bd8b-f7405f63e7f2" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.050">
+    <testcase name="Status code is 200" time="0.050" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.050" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;Lorem ipsum dolo…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with 100 characters in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"Lorem ipsum dolo…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"Lorem ipsum dolo…' to include 'likes'
+   at Object.eval sandbox-script.js:2:120).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.050" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 100 characters in the description" id="088a4ddd-81fb-4c40-b447-1b600405123e" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.056">
+    <testcase name="Status code is 200" time="0.056" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.056" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;hpo2&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with 100 characters in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"hpo2","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"hpo2","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:2:121).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.056" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 3 characters in the name" id="1920ee79-4622-4b80-8958-567cb661626a" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.049">
+    <testcase name="Body matches string" time="0.049" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;763&quot;,&quot;descriptio…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with 3 characters in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"763","descriptio…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"763","descriptio…' to include 'likes'
+   at Object.eval sandbox-script.js:1:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.049" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 3 characters in the description" id="159863fc-c582-4b7f-81f6-e809584fdf6c" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.047">
+    <testcase name="Body matches string" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;n62n&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with 3 characters in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"n62n","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"n62n","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:1:123).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 2 characters in the name" id="2ff47a8f-bb8b-4730-9799-af0770eb893d" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.029">
+    <testcase name="Status code is 400" time="0.029" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.029" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 2 characters in the description" id="b18b3979-45f9-4e51-8e3d-55a5e90b818c" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with 101 characters in the name" id="4d05cfd9-de85-4241-a024-7b49123bafae" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="2" errors="0" time="0.047">
+    <testcase name="Status code is 400" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with 101 characters in the name.]]>
+        <![CDATA[Test description: Status code is 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:126).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response should contain an error message" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected undefined to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with 101 characters in the name.]]>
+        <![CDATA[Test description: Response should contain an error message.]]>
+        <![CDATA[Error message: expected undefined to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be an array
+   at Object.eval sandbox-script.js:2:126).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with numbers and space in the name" id="0c799ebf-4a38-4cb1-9dd6-a78247481e66" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.047">
+    <testcase name="Body matches string" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot; 123qz3&quot;,&quot;descri…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with numbers and space in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":" 123qz3","descri…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":" 123qz3","descri…' to include 'likes'
+   at Object.eval sandbox-script.js:1:127).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with numbers and space in the description" id="4c277386-54db-47b1-aab6-dd2cedc42d79" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.059">
+    <testcase name="Body matches string" time="0.059" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;ez9u&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with numbers and space in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"ez9u","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"ez9u","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:1:128).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.059" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.059" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with only spaces in the name" id="1e15ae0f-28b1-4d74-9124-a746ad8a8527" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.026">
+    <testcase name="Response time is less than 1000ms" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with only spaces in the description" id="99933246-3356-4b05-bf8c-3a0a82250f2b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="2" errors="0" time="0.047">
+    <testcase name="Status code is 400" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with only spaces in the description.]]>
+        <![CDATA[Test description: Status code is 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:130).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains an error message" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected { id: 13969, title: 'i0d6', …(3) } to have property 'error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with only spaces in the description.]]>
+        <![CDATA[Test description: Response contains an error message.]]>
+        <![CDATA[Error message: expected { id: 13969, title: 'i0d6', …(3) } to have property 'error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { id: 13969, title: 'i0d6', …(3) } to have property 'error'
+   at Object.eval sandbox-script.js:3:130).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with special symbols in the name" id="90e9f74e-51b6-4eab-9569-d8a2157d618e" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.047">
+    <testcase name="Body matches string" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;_,j&quot;,&quot;descriptio…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with special symbols in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"_,j","descriptio…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"_,j","descriptio…' to include 'likes'
+   at Object.eval sandbox-script.js:1:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with special symbols in the description" id="64ad9d90-8d8f-407f-a4e5-9c80bc28290e" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.049">
+    <testcase name="Body matches string" time="0.049" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;gdaa&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with special symbols in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"gdaa","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"gdaa","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:1:132).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.049" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with a leading space in the name" id="1ca6192c-c349-49c0-9589-ce6f46f7df3b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.045">
+    <testcase name="Body matches string" time="0.045" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot; hlx&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with a leading space in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":" hlx","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":" hlx","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:1:133).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.045" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with a leading space in the description" id="fdea9d1b-f07b-426d-9689-cb305e88f86e" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.046">
+    <testcase name="Body matches string" time="0.046" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;nur&quot;,&quot;descriptio…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with a leading space in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"nur","descriptio…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"nur","descriptio…' to include 'likes'
+   at Object.eval sandbox-script.js:1:134).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.046" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.046" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with leading zero in the name" id="6fa57094-844d-4410-acd2-980faf63d702" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.049">
+    <testcase name="Body matches string" time="0.049" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;000&quot;,&quot;descriptio…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with leading zero in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"000","descriptio…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"000","descriptio…' to include 'likes'
+   at Object.eval sandbox-script.js:1:135).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.049" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.049" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with leading zero in the description" id="5543d26c-7355-4a26-a16f-b259b0708459" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.047">
+    <testcase name="Body matches string" time="0.047" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;6h7b&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with leading zero in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"6h7b","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"6h7b","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:1:136).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.047" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with null instead  of name" id="4d6b6e88-c415-4589-8861-672bcc058ca7" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with null instead  of description" id="24677c4f-74ac-45a7-849a-db29c10d4d73" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 400" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with false instead  of name" id="40146268-6109-461c-b9fe-9703e1e54fe2" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with false instead  of description" id="83fd3d5c-1c3c-48b4-a0fc-77b864fdd9b4" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with empty string instead of name" id="0bd595d8-1208-4373-b4a0-93a73206c99c" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response should contain an error message" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with empty string instead of description" id="a779ef44-09e7-4fde-8182-7669f7f47eed" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.026">
+    <testcase name="Response time is less than 1000ms" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 400" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains error message" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course upper-case character in the name" id="37925534-3a28-4f23-a466-315a2b045623" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.048">
+    <testcase name="Body matches string" time="0.048" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;fLOwersystem2&quot;,&quot;…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course upper-case character in the name.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"fLOwersystem2","…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"fLOwersystem2","…' to include 'likes'
+   at Object.eval sandbox-script.js:1:143).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.048" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.048" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course upper-case character in the description" id="07fbe443-b0f6-456c-8af6-98a85bbed929" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.048">
+    <testcase name="Body matches string" time="0.048" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;u1v5&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course upper-case character in the description.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"u1v5","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"u1v5","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:1:144).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.048" classname="AleksandraTikhonova"/>
+    <testcase name="Status code is 200" time="0.048" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with a name that is the same as a part of the name of an already existing category" id="a389b785-4e39-4f9b-8db7-ee62966d6b8d" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.049">
+    <testcase name="Body matches string" time="0.049" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;8uigsrp&quot;,&quot;descri…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Update a course with a name that is the same as a part of the name of an already existing category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"8uigsrp","descri…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"8uigsrp","descri…' to include 'likes'
+   at Object.eval sandbox-script.js:1:145).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.049" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Update a course with invalid value in Visible field" id="262b37f1-84e3-41f3-8b27-dfada75818ff" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 400" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to update a course with another category" id="75a0a74e-1a56-4398-b7c9-af4c32b0daf8" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.049">
+    <testcase name="Status code is 200" time="0.049" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.049" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.049" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13969,&quot;title&quot;:&quot;gsrp&quot;,&quot;descripti…' to include 'likes'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Teacher tries to update a course with another category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13969,"title":"gsrp","descripti…' to include 'likes'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13969,"title":"gsrp","descripti…' to include 'likes'
+   at Object.eval sandbox-script.js:3:147).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course by teacher (technical for further checks))" id="9da7c8aa-2db5-404c-8a42-1e2b859f5acb" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.060">
+    <testcase name="Status code is 200" time="0.060" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.060" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to create a course with already existing credentials in another category" id="c2f09303-93e4-4be5-855c-37cdc0a4a16f" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.035">
+    <testcase name="Status code is 400" time="0.035" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.035" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to create a course with already existing credentials in the same category" id="b1b63825-f2d4-4d9d-80b9-8c173e377744" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.042">
+    <testcase name="Status code is 400" time="0.042" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.042" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course by teacher (technical for further checks))" id="5f912463-5efe-4fbc-bf20-5a17402f403c" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.067">
+    <testcase name="Status code is 200" time="0.067" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.067" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to delete a course" id="638dee62-c601-4c63-8f5b-ef198e75d833" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.055">
+    <testcase name="Status code is 200" time="0.055" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.055" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.055" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to delete an inexisting course" id="5d96b277-283c-45a2-80e3-356809c26ff6" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.028">
+    <testcase name="Status code is 404" time="0.028" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 404 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Teacher tries to delete an inexisting course.]]>
+        <![CDATA[Test description: Status code is 404.]]>
+        <![CDATA[Error message: expected response to have status code 404 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 404 but got 400
+   at Object.eval sandbox-script.js:1:153).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.028" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.028" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to delete the course with id=0" id="be059abf-ea97-478e-9ad3-2ab88d57ca5e" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="1" errors="0" time="0.027">
+    <testcase name="Status code is 404" time="0.027" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 404 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-2 / Teacher tries to delete the course with id=0.]]>
+        <![CDATA[Test description: Status code is 404.]]>
+        <![CDATA[Error message: expected response to have status code 404 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 404 but got 400
+   at Object.eval sandbox-script.js:1:154).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response contains the error message" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to update inexisting course" id="edab6d7d-a518-4102-9da4-22934718bb4b" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.032">
+    <testcase name="Status code is 404" time="0.032" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.032" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Add a course by teacher (technical for further checks))" id="1b76d33b-925f-4e55-a035-02fd844db6e0" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.056">
+    <testcase name="Status code is 200" time="0.056" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.056" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to delete a course" id="eefd2531-3b7d-4e3a-ab88-b324f81735c6" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.032">
+    <testcase name="Status code is 403" time="0.032" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.032" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.032" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to delete a course using negative id" id="81497c27-d816-448b-9e04-927a3ff07f1e" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 400" time="0.024" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to see the whole list of courses" id="c171fe4a-91fc-4755-bcb4-6e4ea9732cc3" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.828">
+    <testcase name="Status code is 200" time="0.828" classname="AleksandraTikhonova"/>
+    <testcase name="Response is an array" time="0.828" classname="AleksandraTikhonova"/>
+    <testcase name="Each element in the array has the required properties" time="0.828" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 2000ms" time="0.828" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to see the specific course" id="4c83891d-af72-4d0e-a557-912dc80b0c08" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.034">
+    <testcase name="Status code is 200" time="0.034" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.034" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.034" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Student tries to see the specific course with id =0" id="cd26849a-fca3-4e95-86be-fd8230c47f04" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.030">
+    <testcase name="Status code is 404" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to see the specific course with id =0" id="0876cbb6-ff3c-4b06-8cf3-9c2ed849ec60" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.030">
+    <testcase name="Status code is 404" time="0.030" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to see the specific course" id="5269494f-7804-447a-84bf-4a64bf0b5661" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.033">
+    <testcase name="Status code is 200" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.033" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Teacher tries to see the whole list of courses" id="61f7f74f-189d-4bdc-939b-a05685deebdb" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.836">
+    <testcase name="Status code is 200" time="0.836" classname="AleksandraTikhonova"/>
+    <testcase name="Response is an array" time="0.836" classname="AleksandraTikhonova"/>
+    <testcase name="Each element in the array has the required properties" time="0.836" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 2000ms" time="0.836" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Not authorized user try to see the list of courses" id="d097cb76-d1a6-4db6-8c4a-1bcad63eee3b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 401" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Not authorized user tries to delete the course" id="ebbe2642-776d-4df7-84e3-b91585d6151b" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 401" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Not authorized user tries to see the specific course" id="c832eafd-d089-447c-9e72-6ee99d505172" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 401" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.025" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.025" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Not authorized user tries to update a course" id="3401aa97-3ca5-4d06-98a7-d9cc4baf3238" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 401" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.027" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.027" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-2 / Not authorized user tries to add a course" id="5dea994e-0758-40a5-800c-91424d981536" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 401" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.026" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.026" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 1. Admin manages users / Receiving an access token for admin" id="83bc9260-2917-43a3-8229-9c087192c8b6" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.314">
+    <testcase name="Status code is 200" time="0.314" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.314" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 1. Admin manages users / Admin tries to add a student" id="9ef083bf-fa55-405d-8603-db3582cf33e6" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.304">
+    <testcase name="Status code is 200" time="0.304" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 1. Admin manages users / Admin tries to add a teacher" id="252d8ac2-300c-4186-a2d8-5d49c21a9c89" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.354">
+    <testcase name="Status code is 200" time="0.354" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 1. Admin manages users / Admin tries to delete a teacher" id="739ea67c-5ef6-4739-9e80-7dd89065c29c" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.047">
+    <testcase name="Status code is 200" time="0.047" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Receiving an access token for admin" id="28ebb903-3a30-404f-b528-aa8274af06fb" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.305">
+    <testcase name="Status code is 200" time="0.305" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.305" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Admin creates a new category" id="40f5184a-367d-4c0d-85f4-16b39f87c1c3" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.045" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8667,&quot;title&quot;:&quot;feedcircuitb&quot;}' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Admin creates a new category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8667,"title":"feedcircuitb"}' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8667,"title":"feedcircuitb"}' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:175).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Admin tries to add a teacher" id="7c197613-a941-4973-aee3-1f2f619b7bae" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.322">
+    <testcase name="Status code is 200" time="0.322" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Receiving an access token for teacher" id="4619e618-5bdb-43b1-86ce-46f8cfa66f8e" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.281">
+    <testcase name="Status code is 200" time="0.281" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.281" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Teacher tries to add a course" id="22c36e11-882f-403a-a6d1-e3ea34760091" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.060">
+    <testcase name="Status code is 200" time="0.060" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.060" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13992,&quot;title&quot;:&quot;j6x2&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Teacher tries to add a course.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13992,"title":"j6x2","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13992,"title":"j6x2","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:178).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.060" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 2. Teacher tries to manage courses in the created by Admin category / Teacher tries to see the added course" id="2a9c75d2-ad65-4f9f-b1b5-1b5f7ca5816d" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.033">
+    <testcase name="Status code is 200" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.033" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Receiving an access token for admin" id="62830ca8-8508-48d4-b5de-0cdb38795abc" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.332">
+    <testcase name="Status code is 200" time="0.332" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.332" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin creates a new category" id="e5a8dacb-582a-45c1-86df-1d5f8a95c1ae" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.044">
+    <testcase name="Status code is 200" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.044" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8668,&quot;title&quot;:&quot;pixeltransmitteri…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin creates a new category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8668,"title":"pixeltransmitteri…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8668,"title":"pixeltransmitteri…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:181).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to see the list of categories" id="f9a1e53f-c887-4570-877b-56d893b386ba" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="1" errors="0" time="0.084">
+    <testcase name="Status code is 200" time="0.084" classname="AleksandraTikhonova"/>
+    <testcase name="Response is an array" time="0.084" classname="AleksandraTikhonova"/>
+    <testcase name="Each element in the array has the required properties" time="0.084" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to see the list of categories.]]>
+        <![CDATA[Test description: Each element in the array has the required properties.]]>
+        <![CDATA[Error message: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { id: 4453, title: 'Pizza online' } to have property 'updatedAt'
+   at Object.eval sandbox-script.js:3:182).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.084" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to find a category by its id" id="6a6f460c-6c44-476f-83fd-07e27ef2d242" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.048">
+    <testcase name="Status code is 200" time="0.048" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.048" classname="AleksandraTikhonova"/>
+    <testcase name="Response has the required fields" time="0.048" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to update categories" id="cc993d8b-27c3-4c7e-b00d-b9cdb842c8bc" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.044">
+    <testcase name="Status code is 200" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.044" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.044" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to add a course" id="64265166-d372-416d-b57b-61c0dc89d1d6" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.064">
+    <testcase name="Status code is 200" time="0.064" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.064" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13993,&quot;title&quot;:&quot;drgk&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to add a course.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13993,"title":"drgk","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13993,"title":"drgk","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:185).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.064" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 3. Admin tries to manage categories and courses / Admin tries to get a course by id" id="775e1bd0-3db0-4903-bbf6-3d82c731bb75" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.033">
+    <testcase name="Status code is 200" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.033" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.033" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Receiving an access token for admin" id="aa6392ab-277a-4e1b-97b8-05f771b4da62" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.272">
+    <testcase name="Status code is 200" time="0.272" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.272" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Admin creates a new category" id="0ce11c37-c155-4da2-a1a5-62e1e9e5e7ac" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.045" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:8669,&quot;title&quot;:&quot;capacitorapplicat…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Admin creates a new category.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":8669,"title":"capacitorapplicat…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":8669,"title":"capacitorapplicat…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:3:188).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Receiving an access token for teacher" id="b9f8601e-78f9-4f8e-bbf7-ee3833660431" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.300">
+    <testcase name="Status code is 200" time="0.300" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.300" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Teacher tries to add a course" id="7a2cc51d-667d-4aa2-9713-b87aef967021" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="1" errors="0" time="0.063">
+    <testcase name="Status code is 200" time="0.063" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.063" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected '{&quot;id&quot;:13994,&quot;title&quot;:&quot;667l&quot;,&quot;categoryI…' to include 'updatedAt'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Teacher tries to add a course.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"id":13994,"title":"667l","categoryI…' to include 'updatedAt'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"id":13994,"title":"667l","categoryI…' to include 'updatedAt'
+   at Object.eval sandbox-script.js:2:190).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.063" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Admin adds Student" id="eb0feb10-6e87-4fd2-ba1e-855e93cf7bc3" timestamp="2023-09-23T09:57:35.062Z" tests="1" failures="0" errors="0" time="0.307">
+    <testcase name="Status code is 200" time="0.307" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Receiving an access token for student" id="7c4d989f-31f4-47e7-88ab-d2fcea171a48" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="0" errors="0" time="0.279">
+    <testcase name="Status code is 200" time="0.279" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.279" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Student tries to get a course by id" id="cfe647e9-742c-43cc-be58-7e5c9945162f" timestamp="2023-09-23T09:57:35.062Z" tests="3" failures="0" errors="0" time="0.035">
+    <testcase name="Status code is 200" time="0.035" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.035" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 1000ms" time="0.035" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Teacher tries to delete a course" id="b67cd364-1ff5-4c54-9993-199a4496b878" timestamp="2023-09-23T09:57:35.062Z" tests="4" failures="0" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Body matches string" time="0.045" classname="AleksandraTikhonova"/>
+    <testcase name="Response time is less than 2000ms" time="0.045" classname="AleksandraTikhonova"/>
+  </testsuite>
+  <testsuite name="Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Student tries to get a deleted course by id" id="a7a6df8e-1e66-4201-88a9-4cd0833435e0" timestamp="2023-09-23T09:57:35.062Z" tests="2" failures="1" errors="0" time="0.030">
+    <testcase name="Status code is 404" time="0.030" classname="AleksandraTikhonova">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fe0a7074-d2ae-4a3c-b902-0d31f29e2033.]]>
+        <![CDATA[Collection name: Aleksandra_Tikhonova.]]>
+        <![CDATA[Request name: Lecture-3 / Scenario 4. Student can get a course that is created by teacher, but when the course is delted, a student can´t get it / Student tries to get a deleted course by id.]]>
+        <![CDATA[Test description: Status code is 404.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:195).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.030" classname="AleksandraTikhonova"/>
+  </testsuite>
+</testsuites>
