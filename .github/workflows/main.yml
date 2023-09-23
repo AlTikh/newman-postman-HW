@@ -1,7 +1,7 @@
 name: Newman Postman Collection Run
 
 on:
-  schedule:
+  #schedule:
     #- cron: '0 3 * * *'
   workflow_dispatch:
   push:
